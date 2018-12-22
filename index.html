@@ -91,14 +91,48 @@
 
     <section class="slide">
         <h2>Правила игры</h2>
-        <div>
-            <img class= "rules-img" src="pictures/map.png" alt="Jackal game">
-            <img class= "rules-img" src="pictures/rules1.png" alt="Rules1">
+        <div class="rules">
+            <img class= "rules-img1" src="pictures/map.png" alt="Jackal game">
+            <img class= "rules-img2" src="pictures/rules1.png" alt="Rules1">
         </div>
         <style>
-                .rules-img {
-                    width: 75%;
+            .rules-img1 {
+                width: 500px;
+                grid-column: 1/2;
+                margin-top: -30px;
+            }
+
+            .rules-img2 {
+                width: 400px;
+                grid-column: 2/3;
+            }
+
+            .rules {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <a href="https://jackal.online">jackal.online</a>
+        </h2>
+        <style>
+                .link {
+                    text-decoration: none;
+                    color: black;
                 }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout big-text"> Спасибо за внимание! </h2>            
+        <style>
+            .big-text {
+                font-size: 100px !important;
+            }
         </style>
     </section>
 
